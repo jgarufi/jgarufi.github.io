@@ -56,26 +56,26 @@
       h1{font-size:34px}
     }
 
-    /* --- Experience cards: elevate like your screenshot #2 --- */
-    #experience .grid{
+    /* --- Elevated card look for Experience & Projects --- */
+    #experience .grid, #projects .grid{
       grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
       gap:22px;
     }
-    #experience .card{
+    #experience .card, #projects .card{
       background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));
       border:1px solid rgba(255,255,255,.10);
       border-radius:22px;
       overflow:hidden;
       box-shadow:0 8px 28px rgba(0,0,0,.35);
       transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease;
-      padding:0; /* content padding handled inside child div */
+      padding:0;
     }
-    #experience .card:hover{
+    #experience .card:hover, #projects .card:hover{
       transform:translateY(-4px);
       box-shadow:0 14px 38px rgba(0,0,0,.45);
       border-color:rgba(255,255,255,.14);
     }
-    #experience .card > img{
+    #experience .card > img, #projects .card > img{
       width:100%;
       height:160px;
       object-fit:contain;
@@ -85,11 +85,11 @@
       border-top-left-radius:22px;
       border-top-right-radius:22px;
     }
-    #experience .card > div{ padding:22px; }
-    #experience h3{ margin:0 0 6px; font-size:22px; letter-spacing:.2px; }
-    #experience .muted{ color:#9aa4b6; }
-    #experience ul{ margin:0; padding-left:22px; }
-    #experience li{ margin:8px 0; }
+    #experience .card > div, #projects .card > div{ padding:22px; }
+    #experience h3, #projects h3{ margin:0 0 6px; font-size:22px; letter-spacing:.2px; }
+    #experience .muted, #projects .muted{ color:#9aa4b6; }
+    #experience ul, #projects ul{ margin:0; padding-left:22px; }
+    #experience li, #projects li{ margin:8px 0; }
   </style>
 </head>
 
