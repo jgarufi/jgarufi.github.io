@@ -1,386 +1,176 @@
-<!-- ===== SECTION 1: HEAD + HEADER + HERO (Jenna Garufi) ===== -->
+<!-- Save as index.html in your GitHub Pages repo -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Jenna Garufi | Political Science and Economics</title>
-  <meta name="description" content="Undergraduate at University at Albany studying Political Science and Economics. Experience as a Legal Clerk Intern at Rizzo & Kelley and a New York State Assembly intern. Dean's List and Spellman Award honoree. Interested in law school, public policy, and legal research." />
+  <title>Joseph Paolo | Accounting & Finance</title>
+  <meta name="description" content="Joseph Paolo – Accounting & Finance student with hands-on experience in securitization, audit, tax, and equity research." />
   <meta name="color-scheme" content="dark">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Jenna Garufi | Political Science and Economics" />
-  <meta property="og:description" content="University at Albany undergraduate with legal and legislative experience. Focus on legal research, policy analysis, and community engagement." />
+  <meta property="og:title" content="Joseph Paolo | Accounting & Finance" />
+  <meta property="og:description" content="Marist senior focused on securitization (RMBS/ABS), valuation, and automation." />
   <meta property="og:type" content="website" />
-
-  <!-- Favicon (optional) -->
   <link rel="icon" href="data:;base64,=" />
 
   <style>
-    :root{
-      --bg:#0b0d12; --card:#121622; --muted:#8b94a7; --text:#e9edf5;
-      --accent:#6ae3ff; --accent2:#9bffd1;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;height:100%;scroll-behavior:smooth}
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-    a{color:var(--accent);text-decoration:none}
-    a:hover{opacity:.9}
-    .container{max-width:1100px;margin:0 auto;padding:24px}
-    header{position:sticky;top:0;backdrop-filter:saturate(140%) blur(8px);background:rgba(11,13,18,.6);border-bottom:1px solid rgba(255,255,255,.06);z-index:10}
-    nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .brand{font-weight:700;letter-spacing:.3px}
-    .navlinks{display:flex;gap:18px;flex-wrap:wrap}
-    .btn{display:inline-block;padding:10px 14px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#031018;font-weight:700}
-    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.15);color:var(--text)}
-    .btn.small{padding:8px 12px;border-radius:10px;font-weight:600}
-    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:40px 0}
-    .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:22px}
-    h1{font-size:42px;line-height:1.15;margin:0 0 8px}
-    h2{font-size:28px;margin:28px 0 12px}
-    h3{font-size:20px;margin:18px 0 8px}
-    p.lead{font-size:18px;color:var(--muted)}
-    .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-    .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
-    .kpi{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:12px;text-align:center}
-    .kpi b{font-size:22px;display:block}
-    .avatar{aspect-ratio:1/1;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.08);padding:0}
-    .avatar-img{width:100%;height:auto;display:block;aspect-ratio:1/1;object-fit:cover;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02))}
-    .muted{color:var(--muted)}
-    .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-    @media (max-width:900px){
-      .hero{grid-template-columns:1fr}
-      .two{grid-template-columns:1fr}
-      .kpis{grid-template-columns:1fr}
-      h1{font-size:34px}
+    :root {
+      --bg: #0b0d12; --card: #121622; --muted: #8b94a7; --text: #e9edf5;
+      --accent: #6ae3ff; --accent2: #9bffd1;
     }
 
-    /* --- Elevated card look for Experience & Projects --- */
-    #experience .grid, #projects .grid{
-      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-      gap:22px;
+    * { box-sizing: border-box }
+    html, body { margin: 0; height: 100%; scroll-behavior: smooth }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, sans-serif;
+      background: var(--bg); color: var(--text); line-height: 1.6;
     }
-    #experience .card, #projects .card{
-      background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));
-      border:1px solid rgba(255,255,255,.10);
-      border-radius:22px;
-      overflow:hidden;
-      box-shadow:0 8px 28px rgba(0,0,0,.35);
-      transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease;
-      padding:0;
+
+    a { color: var(--accent); text-decoration: none }
+    a:hover { opacity: 0.9 }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 24px }
+
+    header {
+      position: sticky; top: 0;
+      backdrop-filter: saturate(140%) blur(8px);
+      background: rgba(11, 13, 18, 0.6);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      z-index: 10;
     }
-    #experience .card:hover, #projects .card:hover{
-      transform:translateY(-4px);
-      box-shadow:0 14px 38px rgba(0,0,0,.45);
-      border-color:rgba(255,255,255,.14);
+
+    nav { display: flex; align-items: center; justify-content: space-between; gap: 16px }
+    .brand { font-weight: 700; letter-spacing: .3px }
+    .navlinks { display: flex; gap: 18px; flex-wrap: wrap }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: #031018;
+      font-weight: 700;
     }
-    #experience .card > img, #projects .card > img{
-      width:100%;
-      height:160px;
-      object-fit:contain;
-      display:block;
-      background:rgba(255,255,255,.03);
-      padding:16px;
-      border-top-left-radius:22px;
-      border-top-right-radius:22px;
+
+    .btn.ghost {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: var(--text);
     }
-    #experience .card > div, #projects .card > div{ padding:22px; }
-    #experience h3, #projects h3{ margin:0 0 6px; font-size:22px; letter-spacing:.2px; }
-    #experience .muted, #projects .muted{ color:#9aa4b6; }
-    #experience ul, #projects ul{ margin:0; padding-left:22px; }
-    #experience li, #projects li{ margin:8px 0; }
+
+    .btn.small { padding: 8px 12px; border-radius: 10px; font-weight: 600 }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 28px;
+      align-items: center;
+      padding: 40px 0;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255, 255, 255, .04), rgba(255, 255, 255, .02));
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 18px;
+      padding: 22px;
+    }
+
+    h1 { font-size: 42px; line-height: 1.15; margin: 0 0 8px }
+    h2 { font-size: 28px; margin: 28px 0 12px }
+    h3 { font-size: 20px; margin: 18px 0 8px }
+    p.lead { font-size: 18px; color: var(--muted) }
+
+    ul { padding-left: 18px; margin: 10px 0 }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px }
+    .kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 12px }
+    .kpi {
+      background: var(--card);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 14px;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .kpi b { font-size: 22px; display: block }
+
+    footer { padding: 40px 0; color: var(--muted) }
+
+    .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      margin: 2px;
+      font-size: 12px;
+    }
+
+    .section { padding: 8px 0 }
+    .two { display: grid; grid-template-columns: 1fr 1fr; gap: 18px }
+    .muted { color: var(--muted) }
+
+    .avatar {
+      aspect-ratio: 1/1;
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 0;
+    }
+
+    .avatar-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+
+    .row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center }
+
+    @media (max-width: 900px) {
+      .hero, .grid, .two, .kpis { grid-template-columns: 1fr }
+      h1 { font-size: 34px }
+    }
   </style>
 </head>
 
 <body>
-<header role="navigation" aria-label="Primary">
-  <div class="container">
-    <nav>
-      <div class="brand">Jenna Garufi</div>
-      <div class="navlinks" role="menubar" aria-label="Site">
-        <a href="#about" role="menuitem">About</a>
-        <a href="#experience" role="menuitem">Experience</a>
-        <a href="#projects" role="menuitem">Projects</a>
-        <a href="#contact" role="menuitem">Contact</a>
-        <a class="btn small" href="#contact" aria-label="Jump to contact section">Let’s connect</a>
-      </div>
-    </nav>
-  </div>
-</header>
+  <!-- Header -->
+  <header role="navigation" aria-label="Primary">
+    <div class="container">
+      <nav>
+        <div class="brand">Joseph Paolo</div>
+        <div class="navlinks">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a class="btn small" href="#contact">Let’s connect</a>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-<main class="container" id="top">
-  <!-- HERO -->
-  <section class="hero">
-    <div>
-      <h1>Political Science and Economics student → <span style="background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent">Legal Intern</span></h1>
-      <p class="lead">
-        Undergraduate at the University at Albany with experience in a law firm and the New York State Assembly. I care about access to education, community engagement, and public policy. I plan to attend law school.
-      </p>
-      <div class="row" style="margin-top:16px">
-        <a class="btn" href="#experience" aria-label="Skip to experience">See experience</a>
-        <a class="btn ghost" href="mailto:jennagarufi@gmail.com" aria-label="Email Jenna Garufi" rel="noopener">Email me</a>
-        <!-- Update the PDF path to where you place your file -->
-        <a class="btn ghost" href="assets/Jenna-Garufi-Resume.pdf" target="_blank" rel="noopener" aria-label="Open resume PDF">View resume</a>
-        <a class="btn ghost" href="https://www.linkedin.com/in/jennifer-garufi-659279289" target="_blank" rel="noopener" aria-label="Open LinkedIn profile">LinkedIn</a>
-      </div>
+  <!-- Content -->
+  <main class="container" id="top">
+    <!-- HERO, ABOUT, EXPERIENCE, PROJECTS, CONTACT will go here -->
+    <!-- You can paste your own sections content in this container exactly as before -->
+  </main>
 
-      <div class="kpis" aria-label="Quick facts">
-        <div class="kpi"><b>GPA 3.7</b><span class="muted">University at Albany</span></div>
-        <div class="kpi"><b>Dean’s List</b><span class="muted">Fall 2023 to Fall 2024</span></div>
-        <div class="kpi"><b>Spellman Award</b><span class="muted">2023 and 2024</span></div>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="two">
+        <div>© <span id="y"></span> Joseph Paolo. All rights reserved.</div>
+        <div class="muted" style="text-align:right">Built with GitHub Pages.</div>
       </div>
     </div>
+  </footer>
 
-    <div class="card avatar">
-      <!-- Optional headshot: place at assets/headshot.jpg -->
-      <img id="headshot" class="avatar-img" alt="Headshot of Jenna Garufi" src="assets/headshot.jpg" loading="eager" decoding="async"
-           onerror="this.style.display='none';document.getElementById('avatar-fallback').style.display='grid';">
-      <div id="avatar-fallback" style="display:none;place-items:center;height:100%;color:#94a3b8">
-        <div style="text-align:center">
-          <div style="font-weight:700;margin-bottom:6px">Headshot not found</div>
-          <div style="font-size:12px;line-height:1.4">Add <code>assets/headshot.jpg</code> to your repo.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-   <!-- ===== SECTION 2: ABOUT ===== -->
-  <section id="about" class="section">
-    <h2>About</h2>
-    <div class="two">
-      <div class="card">
-        <p>
-          I am an undergraduate at the University at Albany in the Rockefeller College of Public Affairs and Policy. 
-          I study Political Science and Economics and I plan to attend law school. 
-          I care about access to education, public service, and community engagement.
-        </p>
-        <p class="muted" style="margin-top:8px">
-          Honors include Dean’s List and the Spellman Award. I am also a member of Pi Sigma Alpha.
-        </p>
-
-        <div style="margin-top:12px">
-          <span class="tag">Legal research</span>
-          <span class="tag">Policy analysis</span>
-          <span class="tag">Client communication</span>
-          <span class="tag">Case management</span>
-          <span class="tag">Government affairs</span>
-          <span class="tag">Writing and mentoring</span>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>Focus areas</h3>
-        <ul>
-          <li>Law and public policy with an interest in education access</li>
-          <li>Legislative research and briefing support</li>
-          <li>Law firm operations and court filing workflows</li>
-        </ul>
-
-        <h3>Strengths</h3>
-        <ul>
-          <li>Clear written communication and organized case file upkeep</li>
-          <li>Professional client interactions and intake support</li>
-          <li>Reliable team contributor in fast moving environments</li>
-        </ul>
-
-        <h3>Tools</h3>
-        <ul>
-          <li>Microsoft Office Suite including Word Excel Outlook PowerPoint</li>
-          <li>Clio file management</li>
-          <li>NYSCEF filing system</li>
-        </ul>
-
-        <div class="row" style="margin-top:8px">
-          <a class="btn ghost" href="assets/Jenna-Garufi-Resume.pdf" target="_blank" rel="noopener">View resume</a>
-          <a class="btn ghost" href="https://www.linkedin.com/in/jennifer-garufi-659279289" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-   <!-- ===== SECTION 3: EXPERIENCE ===== -->
-  <section id="experience" class="section">
-    <h2>Experience</h2>
-    <div class="grid">
-
-      <!-- Rizzo & Kelley PLLC -->
-      <div class="card">
-        <img src="assets/logos/rizzo-kelley.png" alt="Rizzo & Kelley PLLC logo" loading="lazy" onerror="this.style.display='none'"/>
-        <div>
-          <h3>Rizzo &amp; Kelley, PLLC</h3>
-          <p style="margin:0 0 6px;"><strong>Legal Clerk Intern</strong></p>
-          <p class="muted" style="margin-bottom:12px;">Poughkeepsie, NY • May 2025 – Aug 2025</p>
-          <ul>
-            <li>Managed client case files: opened new matters, updated active cases, and closed completed files.</li>
-            <li>Drafted and distributed legal correspondence and client communications.</li>
-            <li>Filed documents with the court, retrieved records, and assisted with proceedings.</li>
-            <li>Conducted legal research and organized documentation for efficient case management.</li>
-            <li>Handled client inquiries and routed incoming phone calls accurately.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- NY State Assembly -->
-      <div class="card">
-        <img src="assets/logos/assembly.png" alt="New York State Assembly logo" loading="lazy" onerror="this.style.display='none'"/>
-        <div>
-          <h3>New York State Assembly</h3>
-          <p style="margin:0 0 6px;"><strong>Intern – Office of Assemblyman Michael Novakov, District 45</strong></p>
-          <p class="muted" style="margin-bottom:12px;">Albany, NY • Mar 2025 – May 2025</p>
-          <ul>
-            <li>Reviewed and analyzed bills and legislation to support decision-making.</li>
-            <li>Researched policy issues and drafted briefing memos for the Assemblyman.</li>
-            <li>Met with lobbyists and constituents on behalf of the office.</li>
-            <li>Managed scheduling, phone operations, and tracked mail correspondence.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Peer Mentor -->
-      <div class="card">
-        <img src="assets/logos/ualbany.png" alt="University at Albany logo" loading="lazy" onerror="this.style.display='none'"/>
-        <div>
-          <h3>University at Albany – Writing and Critical Inquiry Department</h3>
-          <p style="margin:0 0 6px;"><strong>Peer Mentor</strong></p>
-          <p class="muted" style="margin-bottom:12px;">Albany, NY • Aug 2024 – May 2025</p>
-          <ul>
-            <li>Mentored students in a first-year writing course, helping them succeed with assignments and paper topics.</li>
-            <li>Facilitated classroom discussions and supported student learning in reading and writing.</li>
-            <li>Strengthened leadership and public speaking skills through peer engagement.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Phi Alpha Delta -->
-      <div class="card">
-        <img src="assets/logos/phi-alpha-delta.png" alt="Phi Alpha Delta Pre-Law Fraternity logo" loading="lazy" onerror="this.style.display='none'"/>
-        <div>
-          <h3>Phi Alpha Delta Pre-Law Fraternity</h3>
-          <p style="margin:0 0 6px;"><strong>Member / Social Chair</strong></p>
-          <p class="muted" style="margin-bottom:12px;">Albany, NY • Feb 2025 – Present</p>
-          <ul>
-            <li>Participated in mock trial workshops and law networking events.</li>
-            <li>Connected with admissions officers, attorneys, and alumni in the legal community.</li>
-            <li>Engaged in LSAT prep and law school success workshops.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Somos Volunteer -->
-      <div class="card">
-        <img src="assets/logos/somos.png" alt="Somos Legislative Conference logo" loading="lazy" onerror="this.style.display='none'"/>
-        <div>
-          <h3>Somos Legislative Conference</h3>
-          <p style="margin:0 0 6px;"><strong>Volunteer</strong></p>
-          <p class="muted" style="margin-bottom:12px;">Albany, NY • Mar 2025</p>
-          <ul>
-            <li>Assisted BronxNet with recording and organizing panel discussions at the State Capitol.</li>
-            <li>Maintained panel schedules, greeted speakers, and guided attendees throughout the event.</li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ===== SECTION 4: PROJECTS & ACTIVITIES ===== -->
-  <section id="projects" class="section">
-    <h2>Projects & Activities</h2>
-    <div class="grid">
-
-      <!-- Academic Honors -->
-      <div class="card" style="padding:0; overflow:hidden;">
-        <img src="assets/logos/deanslist.png" alt="Dean's List recognition" 
-             style="width:100%; height:160px; object-fit:contain; background:var(--card); padding:14px; border-top-left-radius:18px; border-top-right-radius:18px"
-             loading="lazy" onerror="this.style.display='none'">
-        <div style="padding:22px;">
-          <h3>Academic Honors</h3>
-          <p class="muted">University at Albany • 2023 – Present</p>
-          <ul>
-            <li>Dean’s List (Fall 2023 – Fall 2024)</li>
-            <li>Spellman Award (2023, 2024)</li>
-            <li>Member of Pi Sigma Alpha Political Science Honor Society</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Legislative Briefs / Research -->
-      <div class="card" style="padding:0; overflow:hidden;">
-        <img src="assets/logos/assembly.png" alt="NY State Assembly seal"
-             style="width:100%; height:160px; object-fit:contain; background:var(--card); padding:14px; border-top-left-radius:18px; border-top-right-radius:18px"
-             loading="lazy" onerror="this.style.display='none'">
-        <div style="padding:22px;">
-          <h3>Policy Briefs & Legislative Research</h3>
-          <p class="muted">Albany, NY • Spring 2025</p>
-          <ul>
-            <li>Drafted briefing memos to keep Assemblyman Novakov informed on upcoming bills.</li>
-            <li>Researched education and public policy issues as part of internship tasks.</li>
-            <li><a href="assets/papers/sample-policy-memo.pdf" target="_blank" rel="noopener">Sample memo (PDF)</a> (optional link)</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Community Engagement -->
-      <div class="card" style="padding:0; overflow:hidden;">
-        <img src="assets/logos/somos.png" alt="Somos Legislative Conference logo"
-             style="width:100%; height:160px; object-fit:contain; background:var(--card); padding:14px; border-top-left-radius:18px; border-top-right-radius:18px"
-             loading="lazy" onerror="this.style.display='none'">
-        <div style="padding:22px;">
-          <h3>Community Engagement</h3>
-          <p class="muted">Somos Legislative Conference • Mar 2025</p>
-          <ul>
-            <li>Assisted BronxNet with recording and organizing panel discussions at the State Capitol.</li>
-            <li>Supported event flow by maintaining schedules, greeting speakers, and helping attendees.</li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ===== SECTION 5: CONTACT ===== -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <div class="two">
-      <div class="card">
-        <p>Open to roles and internships in law, public policy, and government affairs. The fastest way to reach me is email.</p>
-        <p>
-          <strong>Email:</strong> <a href="mailto:jennagarufi@gmail.com" aria-label="Email Jenna Garufi">jennagarufi@gmail.com</a><br>
-          <strong>Phone:</strong> <a href="tel:+18458917980" aria-label="Call Jenna Garufi">(845) 891-7980</a><br>
-          <strong>Location:</strong> Poughkeepsie, NY<br>
-          <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jennifer-garufi-659279289" target="_blank" rel="noopener" aria-label="Open Jenna Garufi LinkedIn">linkedin.com/in/jennifer-garufi-659279289</a>
-        </p>
-        <div class="row" style="margin-top:8px">
-          <a class="btn" href="assets/Jenna-Garufi-Resume.pdf" target="_blank" rel="noopener" aria-label="Open resume PDF">View résumé</a>
-          <a class="btn ghost" href="assets/Jenna-Garufi-Resume.pdf" download="Jenna-Garufi-Resume.pdf" rel="noopener" aria-label="Download resume PDF">Download</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>Elsewhere</h3>
-        <ul style="margin:0">
-          <li><a href="#about">About</a> — University at Albany (Rockefeller College), B.A. Political Science & B.S. Economics, GPA 3.7</li>
-          <li><a href="#experience">Experience</a> — Rizzo &amp; Kelley (Legal Clerk Intern); NYS Assembly (Intern)</li>
-          <li><a href="#projects">Projects &amp; Activities</a> — Honors, policy research, community engagement</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <div class="container">
-    <div class="two">
-      <div>© <span id="y"></span> Jenna Garufi. All rights reserved.</div>
-      <div class="muted" style="text-align:right">Built with GitHub Pages.</div>
-    </div>
-  </div>
-</footer>
-
-<script>
-  // update year
-  document.getElementById('y').textContent = new Date().getFullYear();
-</script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
+
+ 
