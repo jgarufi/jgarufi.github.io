@@ -3,328 +3,266 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Jenna Garufi | Economics & Poltical Science</title>
+<title>Jenna Garufi | Economics & Political Science</title>
 <meta name="description" content="Jenna Garufi" />
 <link rel="icon" href="data:;base64,=" />
 <meta name="color-scheme" content="dark">
-<meta property="og:title" content="Jenna Garufi | Economics & Poltical Science " />
+<meta property="og:title" content="Jenna Garufi | Economics & Political Science" />
 <meta property="og:description" content="UAlbany junior focused on legal corporate affairs with a focus on compliance, and regulation. I support legal research, draft case materials, and assist with policy and constituent work. I am seeking internships with Fortune 500 companies, the SEC, or legal offices, with a focus on compliance and risk management, opportunities that connect my interests in political science and economics." />
 <meta property="og:type" content="website" />
 <style>
+  :root{
+    --bg:#0b0d12; --card:#121622; --muted:#8b94a7; --text:#e9edf5;
+    --accent:#6ae3ff; --accent2:#9bffd1;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;scroll-behavior:smooth}
+  body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{opacity:.9}
+  .container{max-width:1100px;margin:0 auto;padding:24px}
+  header{position:sticky;top:0;backdrop-filter:saturate(140%) blur(8px);background:rgba(11,13,18,.6);border-bottom:1px solid rgba(255,255,255,.06);z-index:10}
+  nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .brand{font-weight:700;letter-spacing:.3px}
+  .navlinks{display:flex;gap:18px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:10px 14px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#031018;font-weight:700}
+  .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.15);color:var(--text)}
+  .btn.small{padding:8px 12px;border-radius:10px;font-weight:600}
 
-    :root{
+  /* Hero */
+  .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:40px 0}
+  .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:22px}
+  .card.avatar{padding:0;max-width:520px;margin-left:auto;background:var(--card)}
+  h1{font-size:42px;line-height:1.15;margin:0 0 8px}
+  h2{font-size:28px;margin:28px 0 12px}
+  h3{font-size:20px;margin:18px 0 8px}
+  p.lead{font-size:18px;color:var(--muted)}
+  ul{padding-left:18px;margin:10px 0}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+  .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+  .kpi{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;padding:14px;text-align:left}
+  .kpi b{font-size:18px;display:block;margin-bottom:4px}
+  footer{padding:40px 0;color:var(--muted)}
+  .tag{display:inline-block;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);margin:2px;font-size:12px}
+  .section{padding:8px 0}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .muted{color:var(--muted)}
+  .avatar{aspect-ratio:1/1;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.08)}
+  .avatar-img{width:100%;height:100%;display:block;aspect-ratio:4/5;object-fit:cover;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02))}
+  .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 
-      --bg:#0b0d12; --card:#121622; --muted:#8b94a7; --text:#e9edf5;
+  /* Experience grid */
+  .xp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .xp-card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:18px;overflow:hidden}
+  .xp-logo{width:100%;height:150px;display:block;object-fit:contain;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));padding:14px}
+  .xp-body{padding:20px}
+  .xp-body h3{margin:0 0 6px}
+  .xp-body p.muted{margin:0 0 12px;color:var(--muted)}
 
-      --accent:#6ae3ff; --accent2:#9bffd1;
-
-    }
-
-    *{box-sizing:border-box}
-
-    html,body{margin:0;height:100%;scroll-behavior:smooth}
-
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-
-    a{color:var(--accent);text-decoration:none}
-
-    a:hover{opacity:.9}
-
-    .container{max-width:1100px;margin:0 auto;padding:24px}
-
-    header{position:sticky;top:0;backdrop-filter:saturate(140%) blur(8px);background:rgba(11,13,18,.6);border-bottom:1px solid rgba(255,255,255,.06);z-index:10}
-
-    nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
-
-    .brand{font-weight:700;letter-spacing:.3px}
-
-    .navlinks{display:flex;gap:18px;flex-wrap:wrap}
-
-    .btn{display:inline-block;padding:10px 14px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#031018;font-weight:700}
-
-    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.15);color:var(--text)}
-
-    .btn.small{padding:8px 12px;border-radius:10px;font-weight:600}
-
-    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center;padding:40px 0}
-
-    .card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:22px}
-
-    h1{font-size:42px;line-height:1.15;margin:0 0 8px}
-
-    h2{font-size:28px;margin:28px 0 12px}
-
-    h3{font-size:20px;margin:18px 0 8px}
-
-    p.lead{font-size:18px;color:var(--muted)}
-
-    ul{padding-left:18px;margin:10px 0}
-
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
-
-    .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
-
-    .kpi{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:12px;text-align:center}
-
-    .kpi b{font-size:22px;display:block}
-
-    footer{padding:40px 0;color:var(--muted)}
-
-    .tag{display:inline-block;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);margin:2px;font-size:12px}
-
-    .section{padding:8px 0}
-
-    .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-
-    .muted{color:var(--muted)}
-
-    .avatar{aspect-ratio:1/1;border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.08);padding:0}
-
-    .avatar-img{width:100%;height:auto;display:block;aspect-ratio:1/1;object-fit:cover;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02))}
-
-    .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-
-    @media (max-width:900px){
-
-      .hero{grid-template-columns:1fr}
-
-      .grid{grid-template-columns:1fr}
-
-      .two{grid-template-columns:1fr}
-
-      .kpis{grid-template-columns:1fr}
-
-      h1{font-size:34px}
-
-    }
+  /* Responsive */
+  @media (max-width:1100px){ .xp-grid{grid-template-columns:repeat(2,1fr)} }
+  @media (max-width:900px){
+    .hero{grid-template-columns:1fr}
+    .grid{grid-template-columns:1fr}
+    .two{grid-template-columns:1fr}
+    .kpis{grid-template-columns:1fr}
+    .xp-grid{grid-template-columns:1fr}
+    h1{font-size:34px}
+  }
 </style>
 </head>
 <body>
-<!-- Header & Navigation -->
 <header role="navigation" aria-label="Primary">
-<div class="container">
-<nav>
-<div class="brand">Jenna Garufi</div>
-<div class="navlinks">
-<a href="#about">About</a>
-<a href="#experience">Experience</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-<a class="btn small" href="#contact">Let’s connect</a>
-</div>
-</nav>
-</div>
-</header>
- 
-  <!-- Main content -->
-<main class="container" id="top">
-<!-- Hero -->
-<section class="hero">
-  <div>
-    <h1>Economics &amp; Political Science student → 
-      <span style="background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent">
-        Aspiring Lawyer
-      </span>
-    </h1>
-    <p class="lead">
-      UAlbany junior passionate about legal corporate affairs, with a focus on compliance and regulation. 
-      I support legal research, draft case materials, and assist with policy and constituent work. 
-      I am seeking internships in law offices, compliance and risk management, or governmental affairs—opportunities that connect my interests in political science and economics.
-    </p>
-    <div class="row" style="margin-top:16px">
-      <a class="btn" href="#projects">See work</a>
-      <a class="btn ghost" href="mailto:jennagarufi@gmail.com" aria-label="Email Jenna Garufi">Email me</a>
-      <a class="btn ghost" href="resume.pdf" target="_blank" rel="noopener" aria-label="Open résumé in a new tab">View résumé</a>
-    </div>
-    <div class="kpis" aria-label="Quick facts">
-      <div class="kpi"><b>GPA 3.71</b><span class="muted">BS Economics &amp; BA Political Science</span></div>
-      <div class="kpi"><b>Legal Research • Microsoft Office • Public Speaking</b><span class="muted">Skills & Tools</span></div>
-    </div>
+  <div class="container">
+    <nav>
+      <div class="brand">Jenna Garufi</div>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="btn small" href="#contact">Let’s connect</a>
+      </div>
+    </nav>
   </div>
+</header>
 
-  <!-- Headshot aligned right -->
-<div class="card avatar">
-  <img
-    id="headshot"
-    class="avatar-img"
-    alt="Headshot of Jenna Garufi"
-    src="./assets/headshot.jpg?v=2"
-    loading="eager"
-    decoding="async"
-    onerror="this.style.display='none';document.getElementById('avatar-fallback').style.display='grid';"
-  >
-  <div id="avatar-fallback" style="display:none;place-items:center;height:100%;color:#94a3b8">
-    <div style="text-align:center">
-      <div style="font-weight:700;margin-bottom:6px">Headshot not found</div>
-      <div style="font-size:12px;line-height:1.4">
-        Make sure <code>assets/headshot.jpg</code> exists in your repo.
+<main class="container" id="top">
+  <!-- Hero -->
+  <section class="hero">
+    <div>
+      <h1>Economics &amp; Political Science student →
+        <span style="background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent">Aspiring Lawyer</span>
+      </h1>
+      <p class="lead">
+        UAlbany junior passionate about legal corporate affairs, with a focus on compliance and regulation.
+        I support legal research, draft case materials, and assist with policy and constituent work.
+        I am seeking internships in law offices, compliance and risk management, or governmental affairs—opportunities that connect my interests in political science and economics.
+      </p>
+      <div class="row" style="margin-top:16px">
+        <a class="btn" href="#projects">See work</a>
+        <a class="btn ghost" href="mailto:jennagarufi@gmail.com" aria-label="Email Jenna Garufi">Email me</a>
+        <a class="btn ghost" href="resume.pdf" target="_blank" rel="noopener" aria-label="Open résumé in a new tab">View résumé</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/jenna-garufi-659279289" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <div class="kpis" aria-label="Quick facts">
+        <div class="kpi"><b>GPA 3.71</b><span class="muted">BS Economics &amp; BA Political Science</span></div>
+        <div class="kpi"><b>Legal Research • Microsoft Office • Public Speaking</b><span class="muted">Skills &amp; Tools</span></div>
       </div>
     </div>
-  </div>
-</div>
 
+    <!-- Headshot aligned right -->
+    <div class="card avatar">
+      <img
+        id="headshot"
+        class="avatar-img"
+        alt="Headshot of Jenna Garufi"
+        src="./assets/headshot.jpg?v=2"
+        loading="eager"
+        decoding="async"
+        onerror="this.style.display='none';document.getElementById('avatar-fallback').style.display='grid';"
+      >
+      <div id="avatar-fallback" style="display:none;place-items:center;height:100%;color:#94a3b8">
+        <div style="text-align:center">
+          <div style="font-weight:700;margin-bottom:6px">Headshot not found</div>
+          <div style="font-size:12px;line-height:1.4">Make sure <code>assets/headshot.jpg</code> exists in your repo.</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- About -->
-<section id="about" class="section">
-<h2>About</h2>
-<div class="two">
-<div class="card">
-<p>I’m Jenna Garufi, a junior at the University at Albany pursuing a dual degree in Political Science and Economics with plans to attend law school. I have experience in legal research, policy analysis, and case management, and I am now seeking opportunities that align more closely with my intreset in compliance, corporate law, govemental affairs and economic policy.</p>
-<div>
-<span class="tag">LSAT & Law School Prep </span>
-<span class="tag">Case Management </span>
-<span class="tag">Public Policy Analysis </span>
-<span class="tag">Legal Research & Writing</span>
-<span class="tag">Public Speaking</span>
-<span class="tag">MS Office (Word, Excel, Outlook)</span>
-<span class="tag">AI Fluency</span>
-</div>
-</div>
-<div class="card">
-<h3>What I bring</h3>
-<ul>
-<li>Proven legal support experience through managing case files, drafting legal correspondence, conducting research, and assisting with court filings and proceedings</li>
-<li>Skilled in compliance and legislative analysis, with hands-on experience reviewing bills, preparing briefing memos, and meeting with lobbyists and stakeholders on behalf of a state assembly office</li>
-<li>Proficient in Microsoft Office and experienced with legal systems like Clio and NYSCEF, I streamline workflows, maintain accurate records, and manage information efficiently.</li>
-</ul>
-</div>
-</div>
-</section>
- 
-<!-- REFACTORED EXPERIENCE SECTION -->
-<section id="experience" class="section">
-<h2>Experience</h2>
-<div class="grid">
- 
-    <!-- Deloitte -->
-<div class="card" style="padding:0; overflow:hidden;">
-<img src="deloitte.png" alt="Deloitte logo" style="width:100%; height:140px; object-fit:cover; display:block;" loading="lazy" />
-<div style="padding:22px;">
-<h3 style="margin-bottom:4px;"> Rizzo & Kelley PLLC</h3>
-<p style="margin:0 0 6px;"><strong>Legal Intern</strong></p>
-<p class="muted" style="margin-bottom:12px;">  • Poughkeepsie, NY • May 2025 – Aug 2025</p>
-<ul>
-<li>Managed legal case files from intake to closure, ensuring accurate documentation and organization.</li>
-<li>Drafted and filed legal correspondence and court documents; supported attorneys in active proceedings.</li>
-<li>Conducted legal research and maintained case records to support efficient case management and client communication.</li>
-</ul>
-</div>
-</div>
- 
-    <!-- PKF O'Connor Davies -->
-<div class="card" style="padding:0; overflow:hidden;">
-<img src="PKF.png" alt="PKF logo" style="width:100%; height:140px; object-fit:cover; display:block;" loading="lazy" />
-<div style="padding:22px;">
-<h3 style="margin-bottom:4px;">New York State Assembly</h3>
-<p style="margin:0 0 6px;"><strong>Policy Intern</strong></p>
-<p class="muted" style="margin-bottom:12px;"> • Albany, NY • Mar 2025 – May 2025</p>
-<ul>
-<li>Researched policy issues, analyzed legislation, and drafted briefing memos to inform decision-making.</li>
-<li>Represented the Assemblyman in meetings with lobbyists, stakeholders, and constituents.</li>
-<li>Supported office operations by coordinating schedules, managing correspondence, and maintaining communication channels.</li>
-</ul>
-</div>
-</div>
- 
- 
-  </div>
-</section>
- 
- 
-    <!-- INTU Analyst Report (logo) -->
-<div class="card" style="padding:0; overflow:hidden;">
-<img
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About</h2>
+    <div class="two">
+      <div class="card">
+        <p>I’m Jenna Garufi, a junior at the University at Albany pursuing a dual degree in Political Science and Economics with plans to attend law school. I have experience in legal research, policy analysis, and case management, and I am now seeking opportunities that align more closely with my intreset in compliance, corporate law, govemental affairs and economic policy.</p>
+        <div>
+          <span class="tag">LSAT &amp; Law School Prep</span>
+          <span class="tag">Case Management</span>
+          <span class="tag">Public Policy Analysis</span>
+          <span class="tag">Legal Research &amp; Writing</span>
+          <span class="tag">Public Speaking</span>
+          <span class="tag">MS Office (Word, Excel, Outlook)</span>
+          <span class="tag">AI Fluency</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>What I bring</h3>
+        <ul>
+          <li>Proven legal support experience through managing case files, drafting legal correspondence, conducting research, and assisting with court filings and proceedings</li>
+          <li>Skilled in compliance and legislative analysis, with hands-on experience reviewing bills, preparing briefing memos, and meeting with lobbyists and stakeholders on behalf of a state assembly office</li>
+          <li>Proficient in Microsoft Office and experienced with legal systems like Clio and NYSCEF, I streamline workflows, maintain accurate records, and manage information efficiently.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-        src="INTUIT-LOGO.png"
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <h2>Experience</h2>
 
-        alt="Intuit logo"
+    <div class="xp-grid">
+      <!-- Rizzo & Kelley PLLC -->
+      <article class="xp-card">
+        <img src="deloitte.png" alt="Rizzo & Kelley banner" class="xp-logo" loading="lazy" />
+        <div class="xp-body">
+          <h3>Rizzo &amp; Kelley PLLC</h3>
+          <p><strong>Legal Intern</strong></p>
+          <p class="muted">Poughkeepsie, NY • May 2025 – Aug 2025</p>
+          <ul>
+            <li>Managed legal case files from intake to closure, ensuring accurate documentation and organization.</li>
+            <li>Drafted and filed legal correspondence and court documents; supported attorneys in active proceedings.</li>
+            <li>Conducted legal research and maintained case records to support efficient case management and client communication.</li>
+          </ul>
+        </div>
+      </article>
 
-        loading="lazy"
+      <!-- New York State Assembly -->
+      <article class="xp-card">
+        <img src="PKF.png" alt="New York State Assembly banner" class="xp-logo" loading="lazy" />
+        <div class="xp-body">
+          <h3>New York State Assembly</h3>
+          <p><strong>Policy Intern</strong></p>
+          <p class="muted">Albany, NY • Mar 2025 – May 2025</p>
+          <ul>
+            <li>Researched policy issues, analyzed legislation, and drafted briefing memos to inform decision-making.</li>
+            <li>Represented the Assemblyman in meetings with lobbyists, stakeholders, and constituents.</li>
+            <li>Supported office operations by coordinating schedules, managing correspondence, and maintaining communication channels.</li>
+          </ul>
+        </div>
+      </article>
 
-        style="width:100%; height:160px; display:block; object-fit:contain; background:var(--card); padding:14px; border-top-left-radius:18px; border-top-right-radius:18px"
+      <!-- Peer Mentor -->
+      <article class="xp-card">
+        <img src="INTUIT-LOGO.png" alt="Peer Mentor banner" class="xp-logo" loading="lazy" />
+        <div class="xp-body">
+          <h3>Peer Mentor</h3>
+          <p class="muted">Writing and Critical Inquiry Department • Fall&nbsp;2024</p>
+          <ul>
+            <li>Selected for the role as one of the top-performing students in the course.</li>
+            <li>Demonstrated strong leadership and public speaking skills by actively engaging in class discussions and facilitating student learning</li>
+            <li>Tutored students in understanding assignments and discussing paper topics.</li>
+            <li>Mentored students, helping them feel comfortable in a college-level reading and writing course.</li>
+            <li><a href="INTU-Analyst-Report.pdf" target="_blank" rel="noopener">View full report (PDF)</a> | <a href="INTU-Slides.pdf" target="_blank" rel="noopener">View slide deck</a></li>
+          </ul>
+        </div>
+      </article>
 
-        onerror="this.style.display='none'">
-<div style="padding:22px;">
-<h3>Peer Mentor</h3>
-<p class="muted">Writing and Critical Inquiry Department • Fall&nbsp;2024</p>
-<ul>
-<li>Selected for the role as one of the top-performing students in the course.</li>
-<li>Demonstrated strong leadership and public speaking skills by actively engaging in class discussions and facilitating student learning</li>
-<li>Tutored students in understanding assignments and discussing paper topics.</li>
-<li>Mentored students, helping them feel comfortable in a college-level reading and writing course.</li>
-<li>
-<a href="INTU-Analyst-Report.pdf" target="_blank" rel="noopener">View full report (PDF)</a> |
-<a href="INTU-Slides.pdf" target="_blank" rel="noopener">View slide deck</a>
-</li>
-</ul>
-</div>
-</div>
- 
-    <!-- ODFL Analyst Report (logo) -->
-<div class="card" style="padding:0; overflow:hidden;">
-<img
+      <!-- Social Chair -->
+      <article class="xp-card">
+        <img src="ODFL-LOGO.jpg" alt="Social Chair banner" class="xp-logo" loading="lazy" />
+        <div class="xp-body">
+          <h3>Social Chair</h3>
+          <p class="muted">Phi Alpha Delta Pre Law Fraternity • Spring&nbsp;2025</p>
+          <ul>
+            <li>Current Social Chair, creating and planning fraternity events including brotherhood bonding activities and formal gatherings</li>
+            <li>Participated in mock trial workshops and legal networking events to enhance courtroom skills.</li>
+            <li>Networked with law admissions officers, attorneys, and alumni within the legal community.</li>
+            <li>Attended LSAT prep sessions and law school success strategy workshops.</li>
+            <li><a href="ODFL-Analyst-Report.pdf" target="_blank" rel="noopener">View full report (PDF)</a> | <a href="ODFL-Slides.pdf" target="_blank" rel="noopener">View slide deck</a></li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
 
-        src="ODFL-LOGO.jpg"
-
-        alt="Old Dominion Freight Line logo"
-
-        loading="lazy"
-
-        style="width:100%; height:160px; display:block; object-fit:contain; background:var(--card); padding:14px; border-top-left-radius:18px; border-top-right-radius:18px"
-
-        onerror="this.style.display='none'">
-<div style="padding:22px;">
-<h3>Social Chair</h3>
-<p class="muted">Phi Alpha Delta Pre Law Fraternity • Spring &nbsp;2025</p>
-<ul>
-<li> Current Social Chair, creating and planning fraternity events including brotherhood bonding activities and formal gatherings</li>
-<li>Participated in mock trial workshops and legal networking events to enhance courtroom skills.</li>
-<li>Networked with law admissions officers, attorneys, and alumni within the legal community.</li>
-<li>Attended LSAT prep sessions and law school success strategy workshops.</li>
-<li>
-<a href="ODFL-Analyst-Report.pdf" target="_blank" rel="noopener">View full report (PDF)</a> |
-<a href="ODFL-Slides.pdf" target="_blank" rel="noopener">View slide deck</a>
-</li>
-</ul>
-</div>
-</div>
- 
-<!-- Contact -->
-<section id="contact" class="section">
-<h2>Contact</h2>
-<div class="two">
-<div class="card">
-<p>Open to internships and projects in legal research, compliance, risk management, and public policy. Fastest way to reach me: email.</p>
-<p>
-<strong>Email:</strong> <a href="mailto:jennagarufi@gmail.com">jennagarufi@gmail.com</a><br>
-<strong>LinkedIn:</strong> <a href="www.linkedin.com/in/jenna-garufi-659279289" target="_blank" rel="noopener">www.linkedin.com/in/jenna-garufi-659279289</a>
-</p>
-</div>
-<div class="card">
-<h3>Résumé</h3>
-<p class="muted">Open or download my latest résumé (PDF).</p>
-<div class="row">
-<a class="btn" href="resume.pdf" target="_blank" rel="noopener">View résumé</a>
-<a class="btn ghost" href="resume.pdf" download="Joseph-Paolo-Resume.pdf">Download</a>
-</div>
-</div>
-</div>
-</section>
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="two">
+      <div class="card">
+        <p>Open to internships and projects in legal research, compliance, risk management, and public policy. Fastest way to reach me: email.</p>
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:jennagarufi@gmail.com">jennagarufi@gmail.com</a><br>
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/jenna-garufi-659279289" target="_blank" rel="noopener">linkedin.com/in/jenna-garufi-659279289</a>
+        </p>
+      </div>
+      <div class="card">
+        <h3>Résumé</h3>
+        <p class="muted">Open or download my latest résumé (PDF).</p>
+        <div class="row">
+          <a class="btn" href="resume.pdf" target="_blank" rel="noopener">View résumé</a>
+          <a class="btn ghost" href="resume.pdf" download="Jenna-Garufi-Resume.pdf">Download</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
- 
-  <!-- Footer -->
-<footer>
-<div class="container">
-<div class="two">
-<div>© <span id="y"></span> Joseph Paolo. All rights reserved.</div>
-<div class="muted" style="text-align:right">Built with GitHub Pages.</div>
-</div>
-</div>
-</footer>
- 
-  <script>
 
-    document.getElementById('y').textContent = new Date().getFullYear();
+<footer>
+  <div class="container">
+    <div class="two">
+      <div>© <span id="y"></span> Jenna Garufi. All rights reserved.</div>
+      <div class="muted" style="text-align:right">Built with GitHub Pages.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
 </script>
 </body>
 </html>
