@@ -52,7 +52,11 @@
   .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 
   /* Experience / Extracurriculars grid */
-  .xp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .xp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
   .xp-card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:18px;overflow:hidden}
   .xp-logo{width:100%;height:150px;display:block;object-fit:contain;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));padding:14px}
   .xp-body{padding:20px}
