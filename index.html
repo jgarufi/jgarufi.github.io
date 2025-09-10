@@ -112,16 +112,23 @@
         </div>
       </div>
 
-       <div class="card avatar">
-        <img id="headshot" class="avatar-img" alt="Headshot of Jenna Garufi" src="headshot.jpg" loading="eager" decoding="async"
-             onerror="this.style.display='none';document.getElementById('avatar-fallback').style.display='grid';">
-        <div id="avatar-fallback" style="display:none;place-items:center;height:100%;color:#94a3b8">
-          <div style="text-align:center">
-            <div style="font-weight:700;margin-bottom:6px">Headshot not found</div>
-            <div style="font-size:12px;line-height:1.4">Add <code>assets/headshot.jpg</code> to your repo<br>or rename your file to exactly that.</div>
-          </div>
-         </div>
-      </div>
+      <div class="card avatar" style="align-self:start; justify-self:end;">
+  <img
+    id="headshot"
+    class="avatar-img"
+    alt="Headshot of Jenna Garufi"
+    src="/headshot.jpg"
+    loading="eager"
+    decoding="async"
+    onerror="this.style.display='none';document.getElementById('avatar-fallback').style.display='grid';"
+  />
+  <div id="avatar-fallback" style="display:none;place-items:center;min-height:420px;color:#94a3b8">
+    <div style="text-align:center;padding:18px">
+      <div style="font-weight:700;margin-bottom:6px">Headshot not found</div>
+      <div class="muted">Check <code>/headshot.jpg</code> path and case.</div>
+    </div>
+  </div>
+</div>
     </section>
     
     <!-- About -->
