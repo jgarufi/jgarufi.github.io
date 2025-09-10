@@ -97,6 +97,36 @@
     .xp-grid{grid-template-columns:1fr}
     h1{font-size:34px}
   }
+  #about .two{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:24px;
+  margin-top:12px;
+}
+@media (min-width: 900px){
+  #about .two{
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+  }
+}
+#about .card{
+  background: var(--card, #121622);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.04) inset;
+}
+#about h2{ margin-bottom:12px; }
+#about h3{ margin-top:0; }
+#about .tag{
+  display:inline-block;
+  padding:6px 10px;
+  margin:6px 6px 0 0;
+  border-radius:999px;
+  background:rgba(255,255,255,0.06);
+  font-size:12px;
+  white-space:nowrap;
+}
+
 </style>
 </head>
 <body>
@@ -144,6 +174,21 @@
       <div class="kpi"><b>Legal Research • Microsoft Office • Public Speaking</b><span class="muted">Skills &amp; Tools</span></div>
     </div>
   </div>
+  <section id="about" class="section">
+  <h2>About</h2>
+  <div class="two">
+    <div class="card">
+      <!-- About text + tags -->
+      ...
+    </div>
+    <div class="card">
+      <h3>What I bring</h3>
+      <!-- bullets -->
+      ...
+    </div>
+  </div>
+</section>
+
 
   <!-- Headshot aligned right -->
   <div class="card avatar" style="align-self:start; justify-self:end;">
