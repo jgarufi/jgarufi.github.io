@@ -52,16 +52,40 @@
   .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 
   /* Experience / Extracurriculars grid */
-  .xp-grid {
+  /* Experience / Extracurriculars grid */
+.xp-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 20px;
 }
-  .xp-card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:18px;overflow:hidden}
-  .xp-logo{width:100%;height:150px;display:block;object-fit:contain;background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));padding:14px}
-  .xp-body{padding:20px}
-  .xp-body h3{margin:0 0 6px}
-  .xp-body p.muted{margin:0 0 12px;color:var(--muted)}
+
+.xp-card {
+  background: var(--card);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.xp-logo {
+  width: 100%;
+  max-height: 120px;
+  display: block;
+  object-fit: contain;
+  background: white;
+}
+
+.xp-body {
+  padding: 20px;
+}
+
+.xp-body h3 {
+  margin: 0 0 6px;
+}
+
+.xp-body p.muted {
+  margin: 0 0 12px;
+  color: var(--muted);
+}
 
   /* Responsive */
   @media (max-width:1100px){ .xp-grid{grid-template-columns:repeat(2,1fr)} }
@@ -195,34 +219,61 @@
       </div>
     </article>
 
-    <!-- New York State Assembly -->
-    <article class="xp-card">
-      <div style="background-color:white; border-radius:8px; overflow:hidden;">
-        <img 
-          src="assets/nys-assembly.jpg" 
-          alt="New York State Assembly banner" 
-          class="xp-logo" 
-          loading="lazy" 
-          style="display:block; width:100%; height:auto;" 
-        />
-      </div>
-      <div class="xp-body">
-        <h3>New York State Assembly</h3>
-        <p><strong>Policy Intern</strong></p>
-        <p class="muted">Albany, NY • Mar 2025 – May 2025</p>
-        <ul>
-          <li>Researched policy issues, analyzed legislation, and drafted briefing memos to inform decision-making.</li>
-          <li>Represented the Assemblyman in meetings with lobbyists, stakeholders, and constituents.</li>
-          <li>
-            <a href="./PolicyMemoExample.pdf" target="_blank" rel="noopener">
-              Policy memo example (PDF)
-            </a>
-          </li>
-        </ul>
-      </div>
-    </article>
-  </div> <!-- ✅ CLOSE .xp-grid -->
-</section> <!-- ✅ CLOSE #experience -->
+   <h2>Experience</h2> <!-- ✅ Add this line for the section heading -->
+
+<section id="experience" class="xp-grid"> <!-- ✅ This stays the same -->
+
+  <!-- Rizzo & Kelley PLLC -->
+  <article class="xp-card">
+    <div style="background-color:white; border-radius:8px; overflow:hidden;">
+      <img 
+        src="assets/rizzoandkelley.png" 
+        alt="Rizzo & Kelley banner" 
+        class="xp-logo" 
+        loading="lazy"
+        style="display:block; width:100%; height:auto;" 
+      />
+    </div>
+    <div class="xp-body">
+      <h3>Rizzo &amp; Kelley PLLC</h3>
+      <p><strong>Legal Intern</strong></p>
+      <p class="muted">Poughkeepsie, NY • May 2025 – Aug 2025</p>
+      <ul>
+        <li>Managed legal case files from intake to closure, ensuring accurate documentation and organization.</li>
+        <li>Drafted and filed legal correspondence and court documents; supported attorneys in active proceedings.</li>
+        <li>Conducted legal research and maintained case records to support efficient case management and client communication.</li>
+      </ul>
+    </div>
+  </article>
+
+  <!-- New York State Assembly -->
+  <article class="xp-card"> <!-- ✅ No nesting issue here -->
+    <div style="background-color:white; border-radius:8px; overflow:hidden;">
+      <img 
+        src="assets/nys-assembly.jpg" 
+        alt="New York State Assembly banner" 
+        class="xp-logo" 
+        loading="lazy" 
+        style="display:block; width:100%; height:auto;" 
+      />
+    </div>
+    <div class="xp-body">
+      <h3>New York State Assembly</h3>
+      <p><strong>Policy Intern</strong></p>
+      <p class="muted">Albany, NY • Mar 2025 – May 2025</p>
+      <ul>
+        <li>Researched policy issues, analyzed legislation, and drafted briefing memos to inform decision-making.</li>
+        <li>Represented the Assemblyman in meetings with lobbyists, stakeholders, and constituents.</li>
+        <li>
+          <a href="./PolicyMemoExample.pdf" target="_blank" rel="noopener">
+            Policy memo example (PDF)
+          </a>
+        </li>
+      </ul>
+    </div>
+  </article>
+
+</section> <!-- ✅ Properly closes the grid -->
 
 <!-- ✅ Start a brand-new section and grid -->
 <section id="extracurriculars" class="section">
