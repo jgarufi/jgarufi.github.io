@@ -112,7 +112,7 @@
         </div>
       </div>
 
-<div class="card avatar" style="align-self:start; justify-self:end;">
+<div class="card avatar" style="align-self:start; justify-self:end; overflow:visible; text-align:center;">
   <img
     id="headshot"
     class="avatar-img"
@@ -120,6 +120,7 @@
     src="/headshot.jpg"
     loading="eager"
     decoding="async"
+    style="width:100%; height:auto; object-fit:contain; object-position:top; border-radius:12px;"
     onerror="this.style.display='none';document.getElementById('avatar-fallback').style.display='grid';"
   />
   <div id="avatar-fallback" style="display:none;place-items:center;min-height:420px;color:#94a3b8">
